@@ -1,0 +1,14 @@
+.li:not(:first-child) {
+  padding-top: 16px;
+}
+
+.highlight {
+  background-color: black;
+  color: yellow;
+  font-family: "Courier new";
+  padding: 5px;
+}
+
+.title {
+  color: white;
+}

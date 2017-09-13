@@ -1,0 +1,4 @@
+.main {
+  /* Set a maximum width, so forms don't look weird */
+  max-width: 800px;
+}
