@@ -35,7 +35,7 @@ export async function generatePasswordHash(plainTextPassword) {
     bcrypt.genSalt(ROUNDS, (saltError, salt) => {
       if (saltError) return reject(saltError);
       return bcrypt.hash(plainTextPassword, salt, (hashError, hash) => {
-        if (saltError) return reject(saltError);
+        if (hashError) return reject(hashError);
         return ok(hash);
       });
     });
